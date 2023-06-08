@@ -5,23 +5,310 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <title>Portfolio</title>
 </head>
 
-<body>
+<body class="dark">
   <header class="header">
     <div class="switches">
-      <div class="toggle-theme">
-        <img src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon">
-        <p class="toggle-theme__text">Dark mode</p>
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon">
+        <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
 
       </div>
 
     </div>
-
+    <div id="toggle-colors" class="colors">
+      <div data-color=" hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+      <div data-color=" hsl(150, 47%, 44%)" class="colors__item colors__item--green"></div>
+      <div data-color=" hsl(276, 56%, 60%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+    </div>
 
   </header>
+  <main class="main">
+    <section class="column column--left">
+      <article class="card card--profile">
+        <div class="card__image_container">
+          <img src="/assets/images/profile.jpeg" alt="" />
+        </div>
+        <div class="card__header">
+          <h2 class="card__title">Maria Camila Castellanos Botero</h2>
+          <p class="card__subtitle">Full Stack Developer</p>
+        </div>
+        <div class="card__body">
+          <div class="card__link">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:mariacamilacastellanosbotero@gmail.com">
+              mariacamilacastellanosbotero@gmail.com
+
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-phone-alt icon"></i>
+            <a href="tel:3041134934">
+              3041134934
+            </a>
+          </div>
+          <p class="card__text">
+            I have a passion for learning new technologies and implementing
+            them immediately, I have also gained valuable experience in It
+            projects .Through this experience, I have developed strong
+            organizational and communication skills, which enable me to
+            effectively manage projects from start to finish, while keeping all
+            stakeholders informed and up-to-date. This experience has also
+            helped me to understand the importance of meeting deadlines and
+            managing resources efficiently, while still ensuring that the end
+            result meets the client's needs and expectations. I continue to
+            expand my knowledge in
+            software development as it is an essential part of delivering
+            successful IT projects
+          </p>
+        </div>
+      </article>
+      <article class="card card--experience">
+        <h2 class="card__title">Experiences</h2><br>
+        <div class="experience">
+          <img src="assets/images/logo.jpg" alt="logo" class="experience__image">
+          <div class="experience__info">
+            <p class="experience__time">
+              Oct 2022-Apr 2023
+            </p>
+            <h3 class="experience__job"> It Project Manager</h3>
+            <p class="experience__description">
+              I was in charge of raising new requirements, technical documentation, restructuring work in Jira Scrum
+              along with the respective time tracking for the team, monitoring the progress of projects, creating
+              wordpress solutions for new blogs with the SEO team, creating testing strategies, code correction,
+              development of new reports and datatables and finally migrate the entire app to angular.
+            </p>
+          </div>
+        </div><br>
+        <div class="experience">
+          <img src="assets/images/logo.jpg" alt="logo" class="experience__image">
+          <div class="experience__info">
+            <p class="experience__time">
+              Apr 2021-Sept 2023
+            </p>
+            <h3 class="experience__job"> Full Stack developer</h3>
+            <p class="experience__description">
+              I was in charge of coding new tasks that will help to have more efficiency in terms of time in the
+              different areas of the app both as staff side and client side, also extract data in the database for
+              quality and cost analysis of customers and the performance that has been obtained, construction of clean
+              architecture for improvements in the product, construction of blogs through wordpress along with the
+              implementation of plugins and languages such as php, laravel, jquery, javascript, boostrap among others.
+            </p>
+          </div>
+        </div><br>
+        <div class="experience">
+          <img src="assets/images/logo2.jpg" alt="logo" class="experience__image">
+          <div class="experience__info">
+            <p class="experience__time">
+              May 2019-Jul 2019
+            </p>
+            <h3 class="experience__job"> Web developer</h3>
+            <p class="experience__description">
+              I participated in the political campaign of Miguel Uribe for the mayor of Bogota in 2019, where I helped
+              in the creation of mockups, website layout, and design, I also participated in the campaign of Mas57 in
+              which I worked with the Ministry of Tourism in the creation of websites using wordpress to create dynamic
+              sites for entrepreneurs throughout the Colombian territory.
+            </p>
+          </div>
+        </div>
+
+      </article>      
+    </section>
+    <section class="column column--right">
+      <article class="card">
+        <h2 class="card__title">Front End</h2>
+        <small> Años de experiencia </small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">4</span>
+        </div>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">HTML</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">CSS</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Javascript</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">JQuery</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Backend</h2>
+        <small> Años de experiencia </small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">4</span>
+        </div>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">PHP</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Python</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Java</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Docker</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">MySQL</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">PuTTY</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Adobe Photoshop</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Frameworks</h2>
+        <small> Años de experiencia </small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">4</span>
+        </div>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">Laravel</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Boostrap</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Angular</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Symfony</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Wordpress</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/nobs.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#Javascript</span>
+            <span class="project__tag">#PHP</span>
+          </div>
+        </div>
+        <h2 class="card__title">NO-BS Marketplace APP</h2>
+        <p class="card__text">
+          NO-BS is a marketing agency, which offers the construction of web pages and content for general content blogs
+          along with the application of SEO, in this project use different wordpress plugins for the creation of such
+          blogs, on the other hand use php to modify aspects required by customers in different views.
+        </p>
+        <div class="buttons">
+          <a href="https://nobsmarketplace.com/" class="button button--primary">Demo</a>
+        </div>                        
+      </article>
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/pursuit.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#Javascript</span>
+            <span class="project__tag">#PHP</span>
+          </div>
+        </div>
+        <h2 class="card__title">Pursuit Digital</h2>
+        <p class="card__text">
+          Pursuit digital is a digital marketing company, where I participated in the requirements, designs and coding
+          in which I used different plugins such as elementor and woocomerce for its development, also angular and PHP
+          were implemented, this application has roles and is used daily by members of the organization.
+        </p>
+        <div class="buttons">
+          <a href="https://pursuitdigital.com.au/" class="button button--primary">Demo</a>
+        </div>
+      </article>
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/compu.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#Javascript</span>
+            <span class="project__tag">#PHP</span>
+          </div>
+        </div>
+        <h2 class="card__title">Compurent</h2>
+        <p class="card__text">
+          Compurent is a company in which I rent technology equipment to individuals or companies, my participation in
+          this project consists in the design of mockups, code lifting, implementation of Hubspot for cms and elementor
+          enhancements.
+        </p>
+        <div class="buttons">
+          <a href="https://compurent.com.co/servicio-alquiler/?&utm_campaign=&utm_term=alquiler%20de%20computadores&utm_source=adwords&utm_medium=ppc&ctf_src=g&ctf_net=adwords&ctf_mt=b&ctf_grp=149459456371&ctf_ver=1&ctf_cam=19001917676&ctf_kw=alquiler%20de%20computadores&ctf_acc=144-848-3022&ctf_ad=636630662848&ctf_tgt=kwd-321374159954&gclid=EAIaIQobChMI1bn5-Iy0_wIVU9uGCh0zSA_nEAAYASAAEgLJufD_BwE"
+            class="button button--primary">Demo</a>
+        </div>
+      </article>      
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/PX6.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#Javascript</span>
+            <span class="project__tag">#PHP</span>
+          </div>
+        </div>
+        <h2 class="card__title">PX6</h2>
+        <p class="card__text">
+          PX6 is a company specialized in outsourcing, which provides technical training to large companies, my
+          participation in this project was the creation of the website along with direct connection to MySQL, I used
+          technologies such as PHP, Laravel, Boostrap and JQuery as they are the languages and framworks that the client
+          implements.
+        </p>
+        <div class="buttons">
+          <a href="https://www.pxgcorporation.com/" class="button button--primary">Demo</a>
+        </div>
+      </article>
+    </section>   
+  </main>
   <script src="js/scripts.js"></script>
 </body>
 
